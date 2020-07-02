@@ -110,3 +110,103 @@ En résumé, on fera surtout la distinction entre nombres entiers et flottants:
 
 - Pour un nombre entier, on utilisera le plus souvent `int`
 - Pour un nombre flottant, on utilisera généralement `double`
+
+## **Déclarer une variable**
+
+On y arrive. Maintenant, créez un nouveau projet console que vous appellerez "variables".
+
+On va voir comment déclarer une variable, c'est-à-dire **demander à l'ordinateur la permission d'utiliser un peu de mémoire**.
+
+Une déclaration de variable, c'est très simple maintenant que vous savez tout ce qu'il faut. Il suffit dans l'ordre:
+
+1. D'indiquer le type de la variable que l'on veut créer
+2. D'insérer un espace
+3. D'indiquer le nom que vous voulez donner à la variable
+4. Et enfin, de ne pas oublier le point-virgule
+
+Par exemple, si je veux créer ma variable `nombreDeVies` de type `int`, je dois taper la ligne suivante:
+
+```c
+int nombreDeVies;
+```
+
+Et c'est tout! Quelques autres exemples stupides pour la forme:
+
+```c
+int noteDeMaths;
+double sommeArgentRecue;
+unsigned int int noteDeMaths;
+double sommeArgentRecue;
+unsigned int nombreDeLecteursEnTrainDeLireUnNomDeVariableUnPeuLong;
+```
+
+on bref, vous avez compris le principe je pense!
+
+Ce qu'on fait là s'appelle une **déclaration de variable** (un vocabulaire à retenir). Vous devez faire les déclarations de variables au début des fonctions. Comme pour le moment on n'a qu'une seule fonction (la fonction `main`), vous allez déclarer la variable comme ceci:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) // Équivalent de int main()
+{
+  int nombreDeVies;
+
+  return 0;
+}
+```
+
+Si vous lancez le programme ci-dessus, vous constaterez avec stupeur… qu'il ne fait rien.
+
+#### **Quelques explications**
+
+Alors, avant que vous ne m'étrangliez en croyant que je vous mène en bateau depuis tout à l'heure, laissez-moi juste dire une chose pour ma défense.
+
+En fait, il se passe des choses, mais vous ne les voyez pas. Lorsque le programme arrive à la ligne de la déclaration de variable, il demande bien gentiment à l'ordinateur s'il peut utiliser un peu d'espace dans la mémoire vive.
+Si tout va bien, l'ordinateur répond "Oui bien sûr, fais comme chez toi". Généralement, cela se passe sans problème. Le seul souci qu'il pourrait y avoir, c'est qu'il n'y ait plus de place en mémoire… Mais heureusement cela arrive rarement, car pour remplir toute la mémoire rien qu'avec des `int` il faut vraiment le vouloir!
+
+Soyez donc sans crainte, vos variables devraient normalement être créées sans souci.
+
+> Une petite astuce à connaître: si vous avez plusieurs variables du même type à déclarer, inutile de faire une ligne pour chaque variable. Il vous suffit de séparer les différents noms de variables par des virgules sur la même ligne: `int nombreDeVies, niveau, ageDuJoueur;`. Cela créera trois variables `int` appelées `nombreDeVies`, `niveau` et `ageDuJoueur`.
+
+Et maintenant ?
+Maintenant qu'on a créé notre variable, on va pouvoir lui donner une valeur.
+
+## **Affecter une valeur à une variable**
+
+C'est tout ce qu'il y a de plus bête. Si vous voulez donner une valeur à la variable `nombreDeVies`, il suffit de procéder comme ceci:
+
+```c
+nombreDeVies = 5;
+```
+
+Rien de plus à faire. Vous indiquez le nom de la variable, un signe égal, puis la valeur que vous voulez y mettre.
+Ici, on vient de donner la valeur 5 à la variable `nombreDeVies`.
+Notre programme complet ressemble donc à ceci:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[])
+{
+  int nombreDeVies;
+  nombreDeVies = 5;
+
+  return 0;
+}
+```
+
+Là encore, rien ne s'affiche à l'écran, tout se passe dans la mémoire.
+Quelque part dans les tréfonds de votre ordinateur, une petite case de mémoire vient de prendre la valeur 5. N'est-ce pas magnifique ?
+
+On peut s'amuser si on veut à changer la valeur par la suite:
+
+```c
+int nombreDeVies;
+nombreDeVies = 5;
+nombreDeVies = 4;
+nombreDeVies = 3;
+```
+
+Dans cet exemple, la variable va prendre d'abord la valeur 5, puis 4, et enfin 3. Comme votre ordinateur est très rapide, tout cela se passe extrêmement vite. Vous n'avez pas le temps de cligner des yeux que votre variable vient de prendre les valeurs 5, 4 et 3… et ça y est, votre programme est fini.
