@@ -60,8 +60,8 @@ En plus de ça, il y a aussi des nombres entiers négatifs:
 
 … Et des nombres négatifs décimaux!
 
-- -76,9
-- -100,11
+- -76.9
+- -100.11
 
 Votre pauvre ordinateur a besoin d'aide! Lorsque vous lui demandez de stocker un nombre, vous devez dire de quel type il est. Ce n'est pas vraiment qu'il ne soit pas capable de le reconnaître tout seul, mais… ça l'aide beaucoup à s'organiser, et à faire en sorte de ne pas prendre trop de mémoire pour rien.
 
