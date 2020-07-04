@@ -41,7 +41,7 @@ Je vais vous demander de faire de la même manière que moi, ça nous permettra 
 
 Notre ordinateur, vous pourrez le constater, n'est en fait rien d'autre qu'une (très grosse) machine à calculer. Il ne sait traiter que des nombres.
 
-Oui mais voilà, j'ai un scoop ! Il existe plusieurs types de nombres ! Par exemple, il y a les nombres entiers positifs:
+Oui mais voilà, j'ai un scoop! Il existe plusieurs types de nombres ! Par exemple, il y a les nombres entiers positifs:
 
 - 45
 - 398
