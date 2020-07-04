@@ -169,7 +169,7 @@ Soyez donc sans crainte, vos variables devraient normalement être créées sans
 
 > Une petite astuce à connaître: si vous avez plusieurs variables du même type à déclarer, inutile de faire une ligne pour chaque variable. Il vous suffit de séparer les différents noms de variables par des virgules sur la même ligne: `int nombreDeVies, niveau, ageDuJoueur;`. Cela créera trois variables `int` appelées `nombreDeVies`, `niveau` et `ageDuJoueur`.
 
-Et maintenant ?
+Et maintenant?
 Maintenant qu'on a créé notre variable, on va pouvoir lui donner une valeur.
 
 ## **Affecter une valeur à une variable**
