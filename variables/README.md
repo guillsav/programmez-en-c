@@ -198,7 +198,7 @@ int main(int argc, char *argv[])
 ```
 
 Là encore, rien ne s'affiche à l'écran, tout se passe dans la mémoire.
-Quelque part dans les tréfonds de votre ordinateur, une petite case de mémoire vient de prendre la valeur 5. N'est-ce pas magnifique ?
+Quelque part dans les tréfonds de votre ordinateur, une petite case de mémoire vient de prendre la valeur 5. N'est-ce pas magnifique?
 
 On peut s'amuser si on veut à changer la valeur par la suite:
 
